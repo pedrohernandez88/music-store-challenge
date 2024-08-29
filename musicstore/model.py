@@ -1,12 +1,13 @@
 from datetime import datetime
 
 class transaction:
-    self: int = 1
-    Suply: int = 2
-    date: datetime() # type: ignore
-    def _init_(type: int, copies: int)
+    def _init_(self, type: int, copies: int):    
+        SELL: int = 1
+        SUPLY: int = 2
+        date: datetime() # type: ignore
+    
 class disc:
-    def _init_(sid: str, title: str, artist: str, sale_price: float, purchase_price: float, quantity: int):
+    def _init_(self, sid: str, title: str, artist: str, sale_price: float, purchase_price: float, quantity: int):
         sid: str
         title: str
         artist: str
@@ -15,6 +16,29 @@ class disc:
         quantity: int
         transactions: list[transaction]= {}
         song_list: list[str]= {}
-        add_song:(song: str)
+        def add_song(self, song: str):
+            def SELL(self, copies: int) -> bool:
+                copies > quantity
+                return False
+            def SUPLY(self, copies: int):
+                quantity = +1
 
-
+class MusicStore:
+    def _init_(self, discs: dict[str, disc] = {}):
+        def add_disc(self, sid: str, title: str, artist: str, sale_price: float, purchase_price: float, quantity: int ):
+            def search_by_sid(self, sid: str = Disc/None ):
+                def sell_disc(self, sid: str, copies: int) -> bool:
+                    disc = self.search_by_sid(sid)
+                     if disc is None:
+                         return False
+                            return disc.sell(copies)
+                    
+                            def supply_disc(self, sid: str, copies: int) -> bool:
+                                 disc = self.search_by_sid(sid)
+                                    if disc is None:
+                                     return False
+    
+                                    disc.supply(copies)
+                                     return True
+                
+                
